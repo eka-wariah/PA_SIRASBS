@@ -3,7 +3,7 @@
 
 
 <!-- head -->
-@include('admin.head')
+@include('citizens_association.head')
 <!-- endhead -->
 <body>
   <div class="toast toast-onload align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
@@ -22,18 +22,18 @@
   </div>
   <div id="main-wrapper">
     <!-- Sidebar Start -->
-    @include('admin.sidebar_admin')
+    @include('citizens_association.sidebar_CitizenAssociation')
     <!--  Sidebar End -->
     <div class="page-wrapper">
       <!--  Header Start -->
-    @include('admin.navbar')
+    @include('citizens_association.navbar')
       <!--  Header End -->
 
       <aside class="left-sidebar with-horizontal">
         <!-- Sidebar scroll-->
         <div>
           <!-- Sidebar navigation-->
-        @include('admin.sidenav')
+        @include('citizens_association.sidenav')
           <!-- End Sidebar navigation -->
         </div>
         <!-- End Sidebar scroll-->
@@ -384,7 +384,7 @@
   {{-- script --}}
   @include('sweetalert::alert')
 
-  @include('admin.script')
+  @include('citizens_association.script')
   {{-- endscript --}}
 </body>
 

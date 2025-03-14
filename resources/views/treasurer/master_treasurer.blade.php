@@ -3,7 +3,7 @@
 
 
 <!-- head -->
-@include('admin.head')
+@include('treasurer.head')
 <!-- endhead -->
 <body>
   <div class="toast toast-onload align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
@@ -18,22 +18,22 @@
   </div>
   <!-- Preloader -->
   <div class="preloader">
-    <img src="./assets/images/logos/dark-logo.svg" alt="loader" class="lds-ripple img-fluid" />
+    <img src="./assets/images/logos/logoo.png" alt="loader" class="lds-ripple img-fluid" />
   </div>
   <div id="main-wrapper">
     <!-- Sidebar Start -->
-    @include('admin.sidebar_admin')
+    @include('treasurer.sidebar')
     <!--  Sidebar End -->
     <div class="page-wrapper">
       <!--  Header Start -->
-    @include('admin.navbar')
+    @include('treasurer.navbar')
       <!--  Header End -->
 
       <aside class="left-sidebar with-horizontal">
         <!-- Sidebar scroll-->
         <div>
           <!-- Sidebar navigation-->
-        @include('admin.sidenav')
+        @include('treasurer.sidenav')
           <!-- End Sidebar navigation -->
         </div>
         <!-- End Sidebar scroll-->
@@ -383,8 +383,8 @@
   <div class="dark-transparent sidebartoggler"></div>
   {{-- script --}}
   @include('sweetalert::alert')
-
-  @include('admin.script')
+  
+  @include('treasurer.script')
   {{-- endscript --}}
 </body>
 
